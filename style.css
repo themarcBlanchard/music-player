@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/*
+    font-family: 'Nunito', sans-serif;
+
+*/
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    background-color: #292929;
+}
+
+.player-container{
+    height: 500px;
+    width: 400px;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    box-shadow: 10px 8px 38px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 8px 38px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 8px 38px -9px rgba(0,0,0,0.75);
+}
+
+.img-container{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50px;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    top: -300px;
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.52);
+    fllter: grayscale(200%);
+}
+
+#title{
+    text-align: center;
+    font-weight: 900;
+}
+
+#artist{
+    text-align: center;
+}
+
+audio{
+    margin: 0 auto;
+} 
+
+/* Progress */
+
+.progress-container{
+    background: 3fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px;
+    height: 4px;
+    width: 90%;
+}
+
+.progress{
+    background: #242323;
+    border-radius: 5px;
+    height: 100%;
+    width: 60%;
+    transition: width 0.1s linear;
+}
+
+.duration-wrapper{
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Controls */
+.player-controls{
+    cursor: pointer;
+    position: relative;
+    top: -15px;
+    left: 120px;
+    width: 200px;
+}
+
+.fas:hover{
+    filter: brightness(80%);
+}
+
+.fas{
+    font-size: 30px;
+    color: rgb(129, 129, 129);
+    margin-right: 30px;
+    user-select: none;
+}
+
+.main-button{
+    font-size: 40px;
+    position: relative;
+    top: 3px;
+}

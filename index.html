@@ -13,7 +13,28 @@
 <body>
     <div class="player-container">
         <!-- Song -->
-        
+        <div class="img-container">
+            <img src="./img/nf-clouds.webp" alt="Image One of Album"/>
+        </div>
+        <h2 id="title">Clouds</h2>
+        <h3 id="artist">NF</h3>
+        <audio src="./music/clouds.mp3"></audio>
+
+        <!-- Progress Bar -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">4:04</span>
+            </div>
+        </div>
+
+        <!-- Button Controls -->
+        <div class="player-controls">   
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-circle-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
     </div>
     
     <!-- Script -->
